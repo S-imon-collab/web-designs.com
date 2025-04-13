@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///C:/Users/USER/OneDrive/Desktop/Mty%20Portfolio/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon's portfolio</title>
+    <style>
+    
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        :root{
+            ---text-color: #fff;
+            ---neavyblue-color: #00aa;
+        }
+        html{
+            font-size: 66.5%;
+        }
+        .Home{
+            min-height: 100vh;
+            background-color: rgb(232, 63, 153);
+            background-size: cover;
+            position: relative;
+            color: var(---text-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            
+        }
+        header{
+            position: fixed;
+            top: 0;
+            left:0 ;
+            z-index: 99;
+            color: var(---text-color);
+            font-size: 1.5rem;
+            display: flex;
+            width: 100%;
+            justify-content:space-between ;
+            align-items: center;
+            padding: 4rem 10rem;
+            animation: to-b0ttom 1s ease forwards;
+        }
+        header nav a{
+            text-decoration: none;
+            color: var(---text-color);
+            transition: .3s;
+            margin-left: 2rem;
+        }
+        nav button{
+            border-radius: 2rem;
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            color: aliceblue;
+            font-size: 20px;
+            background-color: rgb(144, 0, 255);
+        }
+        nav button:hover{
+            background: transparent;
+        }
+        header nav a:hover,
+        header nav  .active{
+            color: var(---neavyblue-color);
+        }
+        .content-b0x{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            margin-left: 3rem;
+            z-index: 3;
+        }
+        .content-b0x h1{
+            font-size: 3rem;
+            font-weight: 400;
+            animation: to-left 1S ease forwards;
+        }
+        .content-b0x h1 :nth-child(2){
+            animation-delay: .1s;
+        }
+         .text-box .skills{
+            color: var(---neavyblue-color);
+        }
+        .text-box p{
+            margin: 2.5rem 0;
+            margin: 1.4rem;
+            animation: to-left 1s  ease forwards .2s;
+        }
+        .content-b0x .icon-box{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-right: 3rem;
+            animation: to-right 1s ease forwards.5s;
+        }
+        .content-b0x .icon-box i{
+           color: var(---neavyblue-color); 
+           padding: 1rem;
+           font-size: 2.8rem;
+           cursor: pointer;
+           border: .2rem solid var(---neavyblue-color);
+           border-radius: 50%;
+           transition:.2s ;
+        }
+        .content-b0x .icon-box i:hover{
+            color: var(---text-color);
+            background-color: var(---neavyblue-color);
+            box-shadow: 0 0 1.5rem var(---neavyblue-color);
+        }
+        .text-box .btn{
+            color: var(---text-color);
+            padding: .8rem 2.8rem;
+            margin-top: 5%;
+            border: .2rem solid var(---neavyblue-color);
+            background-color: var(---neavyblue-color);
+            font-size: 2rem;
+            cursor: pointer;
+            border-radius: .4rem;
+            transition: .2s;
+            animation: to-left 1s  ease forwards .3s;
+        }
+         .text-box .btn:hover{
+            box-shadow: 0 0 1.5rem var(---neavyblue-color);
+         }
+         img{
+            width: 30%;
+            height: 45rem;
+            margin-top: 5%;
+            margin-right: 8rem;
+            border: .5rem solid var(---text-color);
+            border-radius: 50%;
+            box-shadow: 1rem 1rem 5rem var(---neavyblue-color);
+            background-color: var(---neavyblue-color);
+            transform: scale(0);
+            animation:  scale-img 1s ease forwards .5s;
+         }
+         
+        @keyframes to-b0ttom{
+            0%{
+                opacity: 0;
+                transform: translateY(-8rem);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes to-left{
+            0%{
+                opacity: 0;
+                transform: translateX(-8rem);
+            }
+            100%{
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes to-right{
+            0%{
+                opacity: 0;
+                transform: translateX(-4rem);
+            }
+            100%{
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+             
+        @keyframes scale-img{
+            0%{
+                opacity: 0;
+                transform: scale();
+             }
+             100%{
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+       
+
+        footer{
+            background-color: rgb(232, 63, 153);
+            padding: 2rem;
+
+        }
+        
+        .h1 {
+            font-family: 'Courier New', Courier,;
+        }
+       
+
+
+    </style>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>TECH INC</h1>
+        <nav>
+            <a href="file:///C:/Users/USER/OneDrive/Desktop/Mty%20Portfolio/index.html" class="active">Home</a>
+            <a href="file:///C:/Users/USER/OneDrive/Desktop/Mty%20Portfolio/index.html">About</a>
+            <a href="file:///C:/Users/USER/OneDrive/Desktop/Mty%20Portfolio/index.html#">Skills</a>
+            <a href="file:///C:/Users/USER/OneDrive/Desktop/Mty%20Portfolio/index.html#">Service</a>
+            <a href="file:///C:/Users/USER/OneDrive/Desktop/Mty%20Portfolio/index.html#">Projects</a>
+            <button>Contact Me</button>
+        </nav>
+    </header>
+    <section class="Home">
+        <div class="content-b0x">
+            <div class="icon-box">
+                <i class="bx bxl-facebook"></i>
+                <i class="bx bxl-linkedin"></i>
+                <i class="bx bxl-twitter"></i>
+            </div>
+         
+            <div class="text-box">
+                <h1>Hi, i'm  Costa Simon</h1>
+                <h1>
+                
+                    <span class="skills">Website Developer </span>
+                </h1>
+                <p>I'm websight designer based in nairobi with two years of experience in creating visually appealling and funtional websites.<br>
+                    I specialize in designing responsive,user-friendly websites tailored to clients needs.<br>With a strong background in modern 
+                    web design tools and technologies.
+                </p>
+                <button type="button" class="btn">Download cv  </button>
+                <button type="button" class="btn">Follow Me  </button>
+            </div>
+        </div>
+        <img src="./Simon&#39;s portfolio2_files/Snapchat-2013713948.jpg" class="img" alt="">
+         
+    </section>
+    <script src="file:///C:/Users/USER/OneDrive/Desktop/Mty%20Portfolio/script.js">
+    </script>
+
+  
+    <footer>
+        ©By Tech Inc Technologies: All Rights Reserved;<br>
+        <h4><u>Lets Connect!</u></h4><br>
+        <h4>Email:Techinctechnologies@gmail.com</h4>
+        <h4>bxl-linkedin:Linked.com/in/techinc</h4>
+    </footer>
+
+</body></html>
